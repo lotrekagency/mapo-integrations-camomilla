@@ -1,0 +1,22 @@
+{
+  "name": "mapo-integrations-camomilla",
+  "private": true,
+  "description": "Camomilla-cms integrations for @mapomodule",
+  "author": "bnznamco <gabriele.baldi.01@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotrekagency/mapo-integrations-camomilla.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "pub": "lerna publish --conventional-commits"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "lerna": "^3.22.1"
+  }
+}
