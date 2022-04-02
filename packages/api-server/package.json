@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@mapomodule/integrations": "latest",
+    "cookie": "^0.4.2",
     "cookie-parser": "^1.4.6",
     "express": "^4.17.3",
-    "http-proxy-middleware": "^2.0.4"
+    "http-proxy-middleware": "^2.0.4",
+    "set-cookie-parser": "^2.4.8"
   }
 }
