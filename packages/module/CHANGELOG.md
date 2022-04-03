@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.4](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2022-04-03)
+
+
+### Bug Fixes
+
+* fix logout loop ([32dc2d8](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/32dc2d8f96f7b6b3f778d876ec544af47a9c4836))
+
+
+
+
+
 # [1.0.0-alpha.3](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2022-04-03)
 
 **Note:** Version bump only for package @mapomodule/mapo-integrations-camomilla
