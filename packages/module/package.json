@@ -10,7 +10,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@mapomodule/integrations": "1.0.0-alpha.16",
+    "@mapomodule/integrations": "^1.0.0-alpha.16",
     "cookie": "^0.4.2",
     "cookie-parser": "^1.4.6",
     "express": "^4.17.3",

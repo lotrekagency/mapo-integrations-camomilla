@@ -818,6 +818,11 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
+"@mapomodule/integrations@1.0.0-alpha.16":
+  version "1.0.0-alpha.16"
+  resolved "https://registry.yarnpkg.com/@mapomodule/integrations/-/integrations-1.0.0-alpha.16.tgz#1abb4e62c02c13686699476c0c53ffa6b4a6520e"
+  integrity sha512-rqC1Qo9A6FV38bIxBhak3DhuD5ZCuzTyVvr5r3gl6k7+JVdrfjS06MLSb4lkGdtLR+/GuTqlYF2+Cko4YMFrsw==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

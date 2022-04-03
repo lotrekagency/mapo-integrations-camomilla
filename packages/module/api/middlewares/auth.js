@@ -22,7 +22,7 @@ const mapCookiesFactory = ({ sync }) => (req, res, next) => {
     const { csrftoken, __mapo_session } = req.cookies
     if (__mapo_session) req.cookies.sessionid = __mapo_session
     if (csrftoken) req.headers['X-CSRFToken'] = csrftoken
-    if (!sync) req.headers['cookie'] = Object.keys(req.cookies).map(k => `${k}=${req.cookies[k]}`).join(";")
+    if (!sync || req.path == "/auth/logout") req.headers['cookie'] = Object.keys(req.cookies).map(k => `${k}=${req.cookies[k]}`).join(";")
     next()
 }
 
