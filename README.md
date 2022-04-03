@@ -4,7 +4,13 @@
 
 This package implements an integration between the camomilla cms api interfaces and the nuxt module [`mapo`](https://github.com/lotrekagency/mapo).
 
-## ⚠ Setup:
+## Install:
+
+Add @mapomodule/mapo-integrations-camomilla dependency to your project:
+```sh
+yarn add @mapomodule/mapo-integrations-camomilla # or npm install @mapomodule/mapo-integrations-camomilla
+```
+## Setup:
  - In order to use this integration you need **`django-camomilla-cms >= 5.7.1`**.
  - You also need to add **`"camomilla.authentication.SessionAuthentication"`** to rest framework authentication classes.
  ```py
