@@ -3,6 +3,8 @@ import path from 'path'
 
 export default async function (options) {
 
+    options.api = { base: (this.options.router || {}).base, ...options.api }
+    
     const urlpatterns = [
         { path: '/api', handler: setupEndpoint(path.resolve(__dirname, 'api/proxy/index.js'), options) },
     ]

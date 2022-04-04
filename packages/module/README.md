@@ -57,6 +57,7 @@ For now all the available options reside under the key "api".
  - **onProxyRes**: `function` Here you can manipulate the request before it is sent to camomilla.
  - **onProxyReq**: `function` Here you can manipulate the response before it is sent back to mapo.
  - **use**: `function | function[]` Here you can pass one or more express middlewares, they will be implemented on top of the request.
+ - **base**: `string` Here you can pass a base url that will be used as base path for all the integrations urls (default: takes the value of your nuxt router base prop).
  - **syncCamomillaSession**: `boolean` Here you can decide if you want to syncronize the session between mapo and camomilla. (default: false)
 
  For options like **target**, **headers**, **changeOrigin**, **pathRewrite**, **onProxyRes** and **onProxyReq** you can find more information on [**http-proxy-middleware**](https://github.com/chimurai/http-proxy-middleware) page.

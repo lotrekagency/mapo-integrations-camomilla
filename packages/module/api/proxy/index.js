@@ -13,8 +13,11 @@ module.exports = (options) => {
         onProxyRes,
         onProxyReq,
         use,
+        base,
         syncCamomillaSession
     } = options.api || {}
+
+    const baseUrl = base && (['/', 'http://', 'https://'].some(w => base.startsWith(w)) ? base : ("/" + base)).replace(/\/+$/, '') || ""
 
     const authMiddleware = syncCamomillaSession ? mapAuthLogicSync : mapAuthLogic
     const cookiesMiddleware = syncCamomillaSession ? mapCookiesSync : mapCookies
@@ -26,11 +29,12 @@ module.exports = (options) => {
         onProxyReq,
         onProxyRes: authMiddleware,
         pathRewrite: {
-            '^/api/auth/login': '/api/camomilla/auth/login/',
-            '^/api/auth/logout': '/api/camomilla/auth/logout/',
-            '^/api/profiles/me': '/api/camomilla/users/current/',
-            '^/api/media': '/api/camomilla/media',
-            '^/api/media-folder': '/api/camomilla/media-folder',
+            [`^${baseUrl}/api/auth/login`]: '/api/camomilla/auth/login/',
+            [`^${baseUrl}/api/auth/logout`]: '/api/camomilla/auth/logout/',
+            [`^${baseUrl}/api/profiles/me`]: '/api/camomilla/users/current/',
+            [`^${baseUrl}/api/media`]: '/api/camomilla/media',
+            [`^${baseUrl}/api/media-folder`]: '/api/camomilla/media-folder',
+            [`^${baseUrl}/api`]: '/api',
             ...pathRewrite
         },
     }
