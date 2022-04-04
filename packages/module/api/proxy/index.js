@@ -1,7 +1,7 @@
 const app = require('express')()
 const cookieParser = require("cookie-parser");
 const { createProxyMiddleware, responseInterceptor } = require('http-proxy-middleware');
-const { mapAuthLogic, mapAuthLogicSync, mapCookies, mapCookiesSync } = require('../middlewares/auth.js');
+const { mapAuthLogic, mapAuthLogicSync, mapCookies, mapCookiesSync, mapForwardedProps } = require('../middlewares/auth.js');
 
 
 module.exports = (options) => {
@@ -54,6 +54,7 @@ module.exports = (options) => {
 
     app.use(cookieParser());
     app.use(cookiesMiddleware);
+    app.use(mapForwardedProps);
     app.use(createProxyMiddleware(proxyOptions));
 
     return app

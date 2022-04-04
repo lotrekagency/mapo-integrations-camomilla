@@ -26,6 +26,13 @@ const mapCookiesFactory = ({ sync }) => (req, res, next) => {
     next()
 }
 
+const mapForwardedProps = (req, res, next) => {
+    const referer = new URL(req.headers.referer)
+    req.headers['x-Forwarded-Host'] = referer.host || ""
+    req.headers['x-Forwarded-Proto'] = (referer.protocol || "").replace(/:+$/, '')
+    next()
+}
+
 const mapAuthLogic = mapAuthLogicFactory({ sync: false })
 const mapAuthLogicSync = mapAuthLogicFactory({ sync: true })
 const mapCookies = mapCookiesFactory({ sync: false })
@@ -36,5 +43,5 @@ module.exports = {
     mapAuthLogicSync,
     mapCookies,
     mapCookiesSync,
-
+    mapForwardedProps
 }
