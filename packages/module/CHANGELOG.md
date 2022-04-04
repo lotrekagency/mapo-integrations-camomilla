@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.5](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2022-04-04)
+
+
+### Features
+
+* added base url prop ([d6f8f55](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/d6f8f55de702ef9dec39082d96b1b0a67cee7e54))
+* added Forwarded props middleware ([4209411](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/4209411d630bbc59756e7fdad293c5b23abc3f8f))
+
+
+
+
+
 # [1.0.0-alpha.4](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2022-04-03)
 
 
