@@ -23,6 +23,10 @@ REST_FRAMEWORK = {
     ...
 }
  ```
+ - To prevent bad media urls check your django settings and add this line if not present:
+ ```py
+ USE_X_FORWARDED_HOST = True
+ ```
  
 
  - After installing mapo in your nuxt project provide the integration configuration in `nuxt.config.js`.
