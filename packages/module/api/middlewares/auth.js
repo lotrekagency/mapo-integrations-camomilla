@@ -26,9 +26,11 @@ const mapCookiesFactory = ({ sync }) => (req, res, next) => {
     next()
 }
 
+var referer
+
 const mapForwardedProps = (req, res, next) => {
     try {
-        const referer = new URL(req.headers.referer)
+        referer = req.headers.referer ? new URL(req.headers.referer) : referer
         req.headers['x-Forwarded-Host'] = referer.host || ""
         req.headers['x-Forwarded-Proto'] = (referer.protocol || "").replace(/:+$/, '')
     } catch (_) {} 
