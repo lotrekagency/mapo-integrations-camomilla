@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.6](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.5...v1.0.0-alpha.6) (2022-04-06)
+
+
+### Bug Fixes
+
+* fix forwarded headers when referer is missing ([96b2dbe](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/96b2dbe2ecebe2610f9d66832adacaf15ee232e9))
+
+
+### Features
+
+* maintain referer status between requests to better forward props ([5aeca1e](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/5aeca1e50cd89fcae7eefff8bf2028caa0a62325))
+
+
+
+
+
 # [1.0.0-alpha.5](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2022-04-04)
 
 
