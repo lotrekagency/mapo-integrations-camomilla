@@ -11,7 +11,7 @@ const mapAuthLogicFactory = ({ sync }) => (proxyRes, req, res) => {
         const cookies = setCookie.parse(proxyRes);
         const sessionid = cookies.find(c => c.name == "sessionid")
         const __mapo_session = cookies.find(c => c.name == "__mapo_session")
-        if (sessionid && !__mapo_session) cookies.push({ ...sessionid, name: "__mapo_session", secure: true })
+        if (sessionid && !__mapo_session) cookies.push({ ...sessionid, name: "__mapo_session" })
         proxyRes.headers['set-cookie'] = cookies.filter(c => sync || c.name !== 'sessionid').map(function (cookie) {
             return libCookie.serialize(cookie.name, cookie.value, cookie);
         });
