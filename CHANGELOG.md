@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.7](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2022-04-06)
+
+
+### Bug Fixes
+
+* remove secure flag from cookie to fix unsecured connections ([5d9ddc2](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/5d9ddc2040aae891449e15a7b07ac45c67a60cdc))
+
+
+
+
+
 # [1.0.0-alpha.6](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.5...v1.0.0-alpha.6) (2022-04-06)
 
 
