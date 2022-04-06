@@ -33,13 +33,13 @@ REST_FRAMEWORK = {
 
 ```js
 {
-  buildModules: [
+  modules: [
     'mapomodule'
   ],
   mapo: {
     integrations: {
       camomilla: {
-        location: "@mapomodule/integrations-camomilla",
+        location: "@mapomodule/mapo-integrations-camomilla",
         configuration: {
           api: {
             target: 'http://localhost:8000',
