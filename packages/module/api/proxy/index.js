@@ -33,7 +33,7 @@ module.exports = (options) => {
             [`^${baseUrl}/api/auth/logout`]: '/api/camomilla/auth/logout/',
             [`^${baseUrl}/api/profiles/me`]: '/api/camomilla/users/current/',
             [`^${baseUrl}/api/media`]: '/api/camomilla/media',
-            [`^${baseUrl}/api/media-folder`]: '/api/camomilla/media-folder',
+            [`^${baseUrl}/api/media-folders`]: '/api/camomilla/media-folders',
             [`^${baseUrl}/api`]: '/api',
             ...pathRewrite
         },
