@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.8](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.7...v1.0.0-alpha.8) (2022-04-20)
+
+
+### Bug Fixes
+
+* correct cookie filter ([d110d35](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/d110d355363120137c53c2ca6072100edbe0c1c7))
+* ignore csrf token on login requests ([80ebbf3](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/80ebbf3c4e0d0af8654ec3f9378e455f80e79249))
+* remove csrftoken from login request ([0773fe0](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/0773fe0005599d1ef3bd306157f61fa1949ad5b5))
+* typo in media folders url ([6894097](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/689409739f4605d12f9e34fa2b453f3e2d680ca0))
+
+
+
+
+
 # [1.0.0-alpha.7](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2022-04-06)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@mapomodule/mapo-integrations-camomilla",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0-alpha.8",
   "license": "MIT",
   "description": "This is an integration for Mapo nuxt module. This integrates camomilla compatibility layer.",
   "author": "bnznamco <gabriele.baldi.01@gmail.com>",
