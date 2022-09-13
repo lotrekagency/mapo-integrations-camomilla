@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.9](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.8...v1.0.0-alpha.9) (2022-09-13)
+
+
+### Bug Fixes
+
+* fix login csrf error in case of dirty coockie state ([60ea51e](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/60ea51e1837dd6315dafc735cc74fdc4068cb689))
+
+
+
+
+
 # [1.0.0-alpha.8](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.7...v1.0.0-alpha.8) (2022-04-20)
 
 
