@@ -1,6 +1,7 @@
 const libCookie = require('cookie');
 const setCookie = require('set-cookie-parser');
 
+const validCookies = ["__mapo_session", "sessionid", "csrftoken"]
 
 const mapAuthLogicFactory = ({ sync }) => (proxyRes, req, res) => {
     const paths = [
@@ -43,6 +44,13 @@ const mapForwardedProps = (req, res, next) => {
     next()
 }
 
+const cleanUnnededCookies = (req, res, next) => {
+    try {
+        req.headers['cookie'] = req.headers['cookie'].split(";").filter(c => validCookies.some(v => c.split("=")[0].includes(v))).join(";");
+    } catch (_) { }
+    next()
+}
+
 const mapAuthLogic = mapAuthLogicFactory({ sync: false })
 const mapAuthLogicSync = mapAuthLogicFactory({ sync: true })
 const mapCookies = mapCookiesFactory({ sync: false })
@@ -53,5 +61,6 @@ module.exports = {
     mapAuthLogicSync,
     mapCookies,
     mapCookiesSync,
-    mapForwardedProps
+    mapForwardedProps,
+    cleanUnnededCookies
 }
