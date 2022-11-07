@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.10](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.9...v1.0.0-alpha.10) (2022-11-07)
+
+
+### Bug Fixes
+
+* update dependencies to fix cookie parsing ([d028ff8](https://github.com/lotrekagency/mapo-integrations-camomilla/commit/d028ff8a82c86b16ab895fe16d4f54c08b56d3d0))
+
+
+
+
+
 # [1.0.0-alpha.9](https://github.com/lotrekagency/mapo-integrations-camomilla/compare/v1.0.0-alpha.8...v1.0.0-alpha.9) (2022-09-13)
 
 
